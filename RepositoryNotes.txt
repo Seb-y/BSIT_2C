@@ -1,0 +1,7 @@
+------  PLEASE CREATE YOUR OWN BRANCH  ------
+
+    FOLLOW THIS FORMAT IN NAMING YOUR BRANCH:
+
+        Surname,FirstName_BSIT_2C
+
+        Ex: Mars,Bruno_BSIT_2C
