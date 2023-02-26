@@ -1,0 +1,21 @@
+.navbar_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color:	#191919;
+    color: whitesmoke;
+}
+.navbar_bg h2 {
+    text-align: center;
+}
+.user_info {
+    position: relative;
+    top: 2.5cm;
+    left: 6cm;
+    z-index: +1;
+}
+body {
+    background-color: 	#121212;
+}
