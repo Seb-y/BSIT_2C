@@ -12,6 +12,18 @@
 }
 .navbar_bg h2 {
     text-align: center;
+    color: steelblue;
+}
+.navbar_page table {
+    position: absolute;
+    color: white;
+    width: 70%;
+    top: 10cm;
+    left: 6cm;
+    text-align: left;
+    font-size: 20px;
+    border-style: solid;
+    border: 1px white;
 }
 .user_info {
     position: absolute;
