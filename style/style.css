@@ -18,7 +18,7 @@
   --bg-color:#45f0fd;
 }
 body{
-  color: #000000;
+  color: #1d1717;
   background: linear-gradient(to top, #f3f0c7 0%, #07092e 100%);
 }
 img{
@@ -66,13 +66,13 @@ header{
   font-size: 0.94rem;
   padding: 4px 8px;
   border-radius: 0.2rem;
-  color: var(--bg-color);
+  color: #ececec;
 }
 .nav-link:hover{
-  color: #255784;
-  background: #21e5f3;
-  box-shadow: 0 0 10px #0679ed, 0 0 40px #2133f3, 0 0 80px #21e2f3;
-  border-radius: 10px;
+  color: #f2f2f2;
+  background: #0f1212;
+  box-shadow: 0 0 10px #55a0ea, 0 0 40px #2133f3, 0 0 80px #21e2f3;
+  border-radius: 20px;
   transition: 0.2s all linear;
 
 }
@@ -144,7 +144,7 @@ header{
   align-items: center;
   column-gap: 0.5rem;
   font-size: 1.1rem;
-  color: #4eeaf5;
+  color: #f5f6f6;
 }
 .home-text h3::before{
   content: '';
@@ -205,8 +205,6 @@ header{
   background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
   transition: 0.2s all linear;
 }
-
-
 
 /* Heading */
 .heading{

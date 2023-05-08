@@ -4,4 +4,3 @@ menu.onclick = () => {
     menu.classList.toggle("move");
 }
 
-var typed
