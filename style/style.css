@@ -19,7 +19,7 @@
 }
 body{
   color: #1d1717;
-  background: linear-gradient(to top, #f3f0c7 0%, #07092e 100%);
+  background: linear-gradient(to top, #ffffff 0%, #11132e 100%);
 }
 img{
   width: 100%;
@@ -55,7 +55,7 @@ header{
 .logo{
    font-size: 1.2rem;
    font-weight: 600;
-   color: #becbf4;
+   color: #eaeafa;
 }
 .navbar{
   display: flex;
@@ -175,7 +175,7 @@ header{
   margin-bottom: 1.5rem;
 }
 .home-text .color{
-  color: #fefefe;
+  color: #fafafa;
 }
 .social{
   display: flex;
@@ -214,3 +214,28 @@ header{
   text-align: center;
   margin-bottom: 2rem;
 }
+.about-content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+}
+.about-data .aboutme{
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(40, 40, 104);
+}
+.about-data h2{
+  font-size: 4.5rem;
+  line-height: 3.8rem;
+}
+.about-data .future{
+  color: #fdfeff;
+}
+.about-text{
+  padding-top: 4.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
