@@ -55,7 +55,7 @@ header{
 .logo{
    font-size: 1.2rem;
    font-weight: 600;
-   color: #eaeafa;
+   color: #fdfdfd;
 }
 .navbar{
   display: flex;
@@ -233,9 +233,10 @@ header{
   color: #fdfeff;
 }
 .about-text{
-  padding-top: 4.5rem;
+  padding-top: 2.5rem;
   font-size: 1rem;
   letter-spacing: 1px;
   text-align: justify;
 }
+
 
