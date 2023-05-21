@@ -20,6 +20,17 @@ header {
 header * {
     display: inline;
 }
+header h1 {
+    color: #EBEEFF;
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 1px;
+}
+header img {
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 70%;
+}
 section {
     color: #EBEEFF;
     height: 90vh;
