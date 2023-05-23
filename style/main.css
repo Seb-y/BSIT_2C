@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     font-weight: 180;
-    background: radial-gradient(#fffcfe,#02042c);
+    background: radial-gradient(#f0eff3,#0d2547);
     -webkit-overflow-Y: hidden;
     -moz-overflow-Y: hidden;
     -o-overflow-Y: hidden;
@@ -49,7 +49,7 @@ body {
     position: absolute;
     width: 0px;
     opacity: .75;
-    background-color: rgb(255, 213, 5);
+    background-color: rgb(255, 255, 255);
     box-shadow: #010101 0px 0px 20px 2px;
     opacity: 8;
     top: 100vh;
