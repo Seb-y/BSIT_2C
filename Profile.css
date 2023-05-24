@@ -1,0 +1,174 @@
+body {
+  background-image: url(BACKGROUND.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  animation: slide 1s linear;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.icons {
+  font-size: 80px;
+}
+.icons:hover {
+  color: #ffc107;
+}
+.row {
+  margin: 5%;
+}
+.SKILLS {
+  text-align: center;
+}
+
+.title {
+  color: #ffc107;
+  font-size: 60px;
+  position: relative;
+  animation: slide 1s linear;
+  text-align: center;
+  text-shadow: 1px 1px 1px gray, 1px 2px 1px gray, 1px 3px 1px gray,
+    1px 4px 1px gray, 1px 5px 1px gray;
+}
+#image {
+  border-radius: 50%;
+  height: 400px;
+  position: flex;
+  border: 3px solid gray;
+}
+
+.col-sm-12 {
+  text-align: center;
+  padding-top: 10px;
+}
+.col-md-6 {
+  font-family: Poppins, sans-serif;
+}
+.col-md-5 {
+  font-family: Poppins, sans-serif;
+}
+.row {
+  color: white;
+  justify-content: center;
+}
+.col {
+  margin-left: 150px;
+}
+#twice-content {
+  font-size: 20px;
+  padding-left: 50px;
+  font-family: sans-serif;
+}
+/* for the Icons */
+li a {
+  display: block;
+  font-size: 40px;
+  color: black;
+  background-color: gray;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 100px;
+  padding-bottom: 6px;
+}
+li a:hover {
+  color: #ffc107;
+}
+
+/* for animation */
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+  0% {
+    left: calc(100% - 50%);
+  }
+}
+/* displaying icons on the right */
+.sidenav {
+  float: right;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding-top: 100px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.sidenav a:hover {
+  color: #ffc107;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* For the flipcard */
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.flip-card {
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 50px;
+  height: 390px;
+  width: 300px;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
