@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
+        <title>About Me</title>
+
+        <!-- Customized Css Style -->
+        <link rel="stylesheet" href="css/about me.css">
+
+        <!-- Customized JS -->
+        <script src="js/action.js"></script>
+
+    </head>
+    <body>
+        <div class="about">
+            <nav>
+                <a href="index.html">
+                    <img src="photos/My Portfolio.jpg" class="logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about me.html">ABOUT</a></li>
+                    <li><a href="Album.html">ALBUM</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        <!-- About Me -->
+        <div id="about">
+            <div classs="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photos/profile.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> About Me</h1>
+                        <p> Hi guys, I'm Delight Grace S. Sato, 20 years of age and 
+                            is studying at Bicol University, College of Science. I'm an Information Technology 
+                            student and is currently in 2nd year. My real zodiac sign is Virgo, 
+                            but in Birth Certificate is Libra. I live in Zone 3 San Jose Malilipot, Albay. 
+                            And I have 3 siblings namely; Dustin Gerald, Danica Gwyneth and Divine Gian. 
+                            As you can see we all have DG as initials, cool right?. You can contact me 
+                            in my facebook account, intagram account and many more. 
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                            <p class="tab-links" onclick="opentab('organization')">Organization</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('story')">Story Title</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="hobbies">
+                            <ul>
+                                <li>Watching Series like; 
+                                    <br>Kdrama<br>Cdrama<br>Jdrama<br>Anime<br>Thaidrama <br>and many more</li><br>
+                               <li>Reading Stories with genres like;
+                                    <br>Teen fiction<br>Fantasy<br>Horror<br>and many more</li><br>
+                                <li>Writing Stories like;
+                                    <br>Short Story<br>Teen Fiction<br>Horror<br>Boy's Love<br>and many more</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="organization">
+                            <ul>
+                                <li>Inside the school Organization; 
+                                    <br>CirCuits P.I.O</li><br>
+                               <li>Church Organization;
+                                    <br>Choir Member</li><br>
+                                <li>Society/Community Organization;
+                                    <br>KKDAT Secretary<br>Red Cross Volunteer
+                                    <br>Youth Officer<br>Albay Youth Ambasador<br>Junior Purok Officer<br>and many more</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>Current Shool/University (Tertiary):
+                                    <br>Bicol University, College of Science</li><br>
+                               <li>Primary School:
+                                    <br>San Jose Elementary School</li><br>
+                                <li>Secondary School:
+                                    <br>San Jose National High School<br>
+                                        Tabaco National High School</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="story">
+                            <ul>
+                                <li>Stories I published in Wattpad:
+                                    <br>That Nerd is our Sister<br>
+                                        The Last Section's Princess<br>
+                                        Kpop Idol's Princess<br>
+                                        Kpop's Sister</li><br>
+                               <li>Stories I wrote in my notebooks:
+                                    <br>Extraordinary Class<br>
+                                        That guy is my boyfriend<br>
+                                        Wolf Pack<br>
+                                        I am One of the Boys<br>
+                                        My Extraordinary Story</li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <!-- ---------Footer--------- -->
+        <footer>
+            <p>Copyright &copy; Delight Grace S. Sato 2023</p>
+        </footer>
+    </body>
+</html>
