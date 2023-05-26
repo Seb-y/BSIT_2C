@@ -15,3 +15,11 @@ darkmode.onclick = () => {
         document.body.classList.remove('active');
     }
 }
+function sendEmail() {
+    var confirmation = confirm("Are you sure you want to send this email?");
+    if (confirmation === true) {
+        alert("Email sent!");
+    } else {
+        event.preventDefault();
+    }
+}
