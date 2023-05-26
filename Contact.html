@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
+        <title>About Me</title>
+
+        <!-- Customized Css Style -->
+        <link rel="stylesheet" href="css/Contact.css">
+
+        <!-- Customized JS -->
+        <script src="js/action.js"></script>
+
+    </head>
+    <body>
+        <div class="about">
+            <nav>
+                <a href="index.html">
+                    <img src="photos/My Portfolio.jpg" class="logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about me.html">ABOUT</a></li>
+                    <li><a href="Album.html">ALBUM</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        <!-- About Me -->
+        <div id="about">
+            <div classs="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photos/profile.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> CONTACTS</h1>
+                        <p> This is the social media where you can contact me.<br>
+                             But you can also text or call me in this number.<br>
+                             09637159702.  
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('facebook')">Facebook</p>
+                            <p class="tab-links" onclick="opentab('telegram')">Telegram</p>
+                            <p class="tab-links" onclick="opentab('twitter')">Twitter</p>
+                            <p class="tab-links" onclick="opentab('instagram')">Instagram</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="facebook">
+                            <ul>
+                                <li><h3>Facebook Account:
+                                    <br>Delight Grace Sato</h3></li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="telegram">
+                            <ul>
+                                <li><h3>Telegram Account 
+                                    <br>Delight Grace S. Sato (09637159702)</h3></li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="twitter">
+                            <ul>
+                                <li><h3>Twitter Account:
+                                    <br>@DelightSato</h3></li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="instagram">
+                            <ul>
+                                <li><h3>Instagram Account:
+                                    <br>@delightgrace06</h3></li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+        </script>
+        <!-- ---------Footer--------- -->
+        <footer>
+            <p>Copyright &copy; Delight Grace S. Sato 2023</p>
+        </footer>
+    </body>
+</html>

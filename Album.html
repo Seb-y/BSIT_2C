@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
+        <title>Personal Portfolio Website</title>
+
+        <!-- Customized Css Style -->
+        <link rel="stylesheet" href="css/album.css">
+
+    </head>
+    <body>
+        <!-- ---------The Content----------- -->
+        <div class="design">
+            <!-- --------Navigators-------- -->
+            <nav>
+                <a href="index.html">
+                    <img src="photos/My Portfolio.jpg" class="logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about me.html">ABOUT</a></li>
+                    <li><a href="Album.html">ALBUM</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- Pictures HERE! -->
+            <div class="picture">
+                <h1>PHOTO ALBUM</h1>
+                <h2>Photos</h2>
+                <h3></h3>
+                <ul>
+                    <li>
+                        <img src="photos/profile.jpg" id="profile1" alt="Profile 1">
+                    </li>
+                    <li>
+                        <img src="photos/p1.jpg" id="profile2" alt="Profile 2">
+                    </li>
+                    <li>
+                        <img src="photos/p2.jpg" id="profile3" alt="Profile 3">
+                    </li>
+                    <li>
+                      <img src="photos/p3.jpg" id="profile4" alt="Profile 4">
+                  </li>
+                  <li>
+                    <img src="photos/p4.jpg" id="profile5" alt="Profile 5">
+                </li>
+                </ul>
+
+                <h3>ME and my Family</h3>
+                <ul>
+                    <li>
+                        <img src="photos/MAMF1.jpg" id="myImg" alt="Cover Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF2.jpg" id="myImg1" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF3.jpg" id="myImg2" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF4.jpg" id="myImg3" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF5.jpg" id="myImg4" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF6.jpg" id="myImg5" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF7.jpg" id="myImg6" alt="Random Photo">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="photos/MAMF8.jpg" id="myImg7" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF9.jpg" id="myImg8" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF10.jpg" id="myImg9" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF11.jpg" id="myImg10" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF12.jpg" id="myImg11" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF13.jpg" id="myImg12" alt="Random Photo">
+                    </li>
+                    <li>
+                        <img src="photos/MAMF14.jpg" id="myImg13" alt="Random Photo">
+                    </li>
+                </ul>
+
+                <h3>With My Friends</h3>
+                <ul>
+                    <li>
+                        <img src="photos/F1.jpg" id="F1" alt=" F1">
+                    </li>
+                    <li>
+                        <img src="photos/F2.jpg" id="F2" alt="F2">
+                    </li>
+                    <li>
+                        <img src="photos/F3.jpg" id="F3" alt="F3">
+                    </li>
+                    <li>
+                        <img src="photos/F4.jpg" id="F4" alt="F4">
+                    </li>
+                    <li>
+                        <img src="photos/F5.jpg" id="F5" alt="F5">
+                    </li>
+                    <li>
+                        <img src="photos/F6.jpg" id="F6" alt="F6">
+                    </li>
+                    <li>
+                        <img src="photos/F7.jpg" id="F7" alt="F7">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="photos/F8.jpg" id="F8" alt="F8">
+                    </li>
+                    <li>
+                        <img src="photos/F9.jpg" id="F9" alt="F9">
+                    </li>
+                    <li>
+                        <img src="photos/F10.jpg" id="F10" alt="F10">
+                    </li>
+                    <li>
+                        <img src="photos/F11.jpg" id="F11" alt="F11">
+                    </li>
+                    <li>
+                        <img src="photos/F12.jpg" id="F12" alt="F12">
+                    </li>
+                    <li>
+                        <img src="photos/F13.jpg" id="F13" alt="F13">
+                    </li>
+                    <li>
+                        <img src="photos/F14.jpg" id="F14" alt="F14">
+                    </li>
+                </ul>
+                <br><br><br><br><br><br><br>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <!-- ---------Footer--------- -->
+        <footer>
+            <p>Copyright &copy; Delight Grace S. Sato 2023</p>
+        </footer>
+    </body>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var prof1 = document.getElementById("profile");
+        var prof2 = document.getElementById("p1");
+        var prof3 = document.getElementById("p2");
+        var prof4 = document.getElementById("p3");
+        var prof5 = document.getElementById("p4");
+
+        var img = document.getElementById("MAMF1");
+        var img1 = document.getElementById("MAMF2");
+        var img2 = document.getElementById("MAMF3");
+        var img3 = document.getElementById("MAMF4");
+        var img4 = document.getElementById("MAMF5");
+        var img5 = document.getElementById("MAMF6");
+        var img6 = document.getElementById("MAMF7");
+        var img7 = document.getElementById("MAMF8");
+        var img8 = document.getElementById("MAMF9");
+        var img9 = document.getElementById("MAMF10");
+        var img10 = document.getElementById("MAMF11");
+        var img11 = document.getElementById("MAMF12");
+        var img12 = document.getElementById("MAMF13");
+        var img13 = document.getElementById("MAMF14");
+
+        var F1 = document.getElementById("F1");
+        var F2 = document.getElementById("F2");
+        var F3 = document.getElementById("F3");
+        var F4 = document.getElementById("F4");
+        var F5 = document.getElementById("F5");
+        var F6 = document.getElementById("F6");
+        var F7 = document.getElementById("F7");
+        var F8 = document.getElementById("F8");
+        var F9 = document.getElementById("F9");
+        var F10 = document.getElementById("F10");
+        var F11 = document.getElementById("F11");
+        var F12 = document.getElementById("F12");
+        var F13 = document.getElementById("F13");
+        var F14 = document.getElementById("F14");
+
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        prof1.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        prof2.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        prof3.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        prof4.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        prof5.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img1.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img5.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img6.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img7.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img8.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img9.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img10.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img11.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img12.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img13.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        pe1.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe2.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe3.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe4.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe5.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe6.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe7.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe8.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe9.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe10.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe11.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe12.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe13.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        pe14.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
+</html>
