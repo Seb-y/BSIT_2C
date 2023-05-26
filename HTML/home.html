@@ -12,12 +12,16 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 <body>
+    <!-- Scroll Top-->
+     <a href="#home" class="scroll-top">
+        <i class='bx bxs-up-arrow' ></i>
+     </a>
     <!-- Header -->
     <header>
         <!-- Nav -->
         <div class="nav container">
             <!-- Logo -->
-            <a href="#" class="logo">Kenneth</a>
+            <a href="#" class="logo">Portfolio Website</a>
             <!-- Navbar -->
             <ul class="navbar">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -66,7 +70,7 @@
                 <span class="aboutme">About Me</span>
                 <h2><span class="future">Future</span>Web Developer & <br>
                     Web Designer</h2>
-                    <a href="#" class="button">Download CV
+                    <a href="../cv/CV.docx" class="button">Download CV
                         <i class='bx bxs-download' style='color:#f8f8f8'  ></i>
                     </button></a>
             </div>
@@ -104,21 +108,21 @@
              <!--Portfolio Content--> 
              <div class="portfolio-content">
                 <div class="portfolio-box">
-                    <img src="../img/productweb.webp" alt="" class="portfolio-img">
+                    <img src="../img/Store.webp" alt="" class="portfolio-img">
                     <!--Overlay-->
                     <div class="potfolio-overlay">
-                    <h2>Web Development</h2>
-                    <a href="#">
+                    <h2>Web Design</h2>
+                    <a href="../samples/HIFI HTML/Signup-page.html">
                         <i class='bx bx-link'></i>
                     </a>
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="../img/Store.webp" alt="" class="portfolio-img">
+                    <img src="../img/productweb.webp" alt="" class="portfolio-img">
                     <!--Overlay-->
                     <div class="potfolio-overlay">
-                    <h2>Web Designing</h2>
-                    <a href="#">
+                    <h2>Web Development</h2>
+                    <a href="/sample/HIFI HTML/Signup-page.html">
                         <i class='bx bx-link'></i>
                     </a>
                     </div>
@@ -154,12 +158,51 @@
             <span>Happy Clients</span>
         </div>
     </div>
-
     </section>
 
-    <!-- Link To JS -->
-   <script src="JS/main.js"></script>
-   <script src="https://cdn.jsdeliver.net/npm/typed.js@2.0.12"></script>
+    <!--Contact Form-->
+    <section class="contact container" id="contact">
+        <!--Heading-->
+        <h2 class="heading">Contact</h2>
+        <!--Contact Form-->
+            <form actions="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your Name" class="name" required>
+            <input type="email"  name="" id="" placeholder="Email address..." class="email" required>
+            <textarea id= cols="20" rows="10" placeholder="Write message here..." class="message" required></textarea>
+            <input type="submit" value="Send" class="send-btn">
+            </input>
+        </form>
+    </section>
+    <!--Footer-->
+    <section class="footer" id="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/kenneth.espela.9"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://twitter.com/Thennek_Alepse"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/kennxpela/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/kenxpela"><i class='bx bxl-github' ></i></a>
+            <a href="mailto:kenespela@gmail.com"><i class='bx bx-envelope-open'></i></a>
+        </div>
+        <!-- Footer links -->
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <!-- copyright -->
+        <p>&#169; kenxpela</p>
+    </section>
 
+    <!-- Email js link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('urv5cP6q_tKO7ag8H');
+        })();
+      </script>
+      <!--js link-->
+<script src="../JS/function.js"></script>
 </body>
-</html
+</html> 
