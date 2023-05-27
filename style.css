@@ -1,0 +1,150 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #1d1d1d;
+	background-color: #ffffff;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #0c060c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #dbd8d8;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+/* Layout */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	background: linear-gradient(145deg, #95d7e7, #3d3850);
+	background-clip: padding-box;
+	border-radius: 10px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+section {
+	padding: 50px;
+	margin: 50px auto;
+	max-width: 800px;
+	background-color: rgba(230, 230, 230, 0.8);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+	font-size: 36px;
+	color: #1b0f22;
+	margin-bottom: 30px;
+}
+
+section p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.project {
+	margin-bottom: 30px;
+}
+
+.project h3 {
+	font-size: 24px;
+	color: #363636;
+	margin-bottom: 10px;
+}
+
+.project p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	color: #000000;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+form label {
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #201d30;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"] {
+	background-color: #3d3d3d;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+	background-color: #c8eef8;
+}
+
+.portrait{
+    width: 2000px;
+    display: inline-flex;
+}
+
+.portrait img{
+    margin: auto 750px;
+    float: center;
+    width: 400px;
+    height: 400px;
+}
